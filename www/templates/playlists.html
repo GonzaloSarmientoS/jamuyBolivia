@@ -1,0 +1,17 @@
+<ion-view view-title="Conoce Cochabamba">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.	
+ActividadId}}/{{playlist.Nombre}}">
+      	<!--<img ng-src="{{ playlist.image }}">-->
+        
+
+        <div class="row">
+	     <div class="col col-67"><img src="img/{{playlist.Foto}}" width="100%"></div>
+	     <div class="col">
+	       <p>{{playlist.Nombre}}</p></div>
+	    </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
